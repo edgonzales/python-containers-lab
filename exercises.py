@@ -24,3 +24,14 @@ for food in foods:
     lastTwo = foods[1:3]
     if food in lastTwo:
         print(food)
+
+#Exercise 4
+# Create a dictionary named home_town containing the keys of city, state and population.
+# Print a string with this format:
+# "I was born in city, state - population of population"
+home_town = {
+    'city': 'El Centro',
+    'state': 'California',
+    'population': '44,158'
+}
+print(f"I was born in {home_town['city']}, {home_town['state']} - population of {home_town['population']}")
