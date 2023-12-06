@@ -15,3 +15,12 @@ print(students[2])
 foods = ('Cauliflower', 'Green Beans', 'Orange')
 for food in foods:
     print (f"{food} is good for you")
+
+#Exercise 3
+# Using a for loop, print just the last two food strings from foods.
+# Hint: Use the slice operator to select the last two foods
+lastTwo = []
+for food in foods:
+    lastTwo = foods[1:3]
+    if food in lastTwo:
+        print(food)
