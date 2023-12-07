@@ -12,7 +12,7 @@ print(students[2])
 # Create a tuple named foods containing the same number of foods (strings) as 
 # there are names in the students list. Use a for loop to print out the string 
 # "[food goes here] is a good food".
-foods = ('Cauliflower', 'Green Beans', 'Orange')
+foods = ('Cauliflower', 'Green Beans', 'Butter Milk Cookies')
 for food in foods:
     print (f"{food} is good for you")
 
@@ -71,3 +71,20 @@ print(cohort)
 stringList = []
 awesome_students = [stringList.append(f"{student} is awesome!") for student in students]
 print(stringList)
+
+
+#Exercise 8
+# Use a for loop to iterate over a list comprehension that filters the foods tuple to 
+# only include food 
+# strings that contains the letter a.
+# Within the for loop, print each food string.
+
+foods_with_a = []
+# foodComprehenson = [foods_with_a.append(f"{food}") for food in foods if ("a" in food)]
+# print(foods_with_a)
+
+for food in foods:
+    print(food)
+    if ("a" in food):
+        foods_with_a.append(food)
+print(foods_with_a)
