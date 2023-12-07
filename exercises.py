@@ -43,3 +43,31 @@ print(f"I was born in {home_town['city']}, {home_town['state']} - population of 
 # "population = 58000"
 for key, val in home_town.items():
     print(f"{key} = {val}")
+
+#Exercise 6
+# Create an empty list named cohort.
+# Using a for loop to iterate over the students list.
+# Hint: Use the enumerate function to provide both the index & student
+# Within the for loop, add a dictionary to the cohort list that combines the student's name and the food 
+# in the foods list at the same index. Each dictionary will have this shape:
+#  {
+#    'student': 'Tina',
+#    'fav_food': 'Cheeseburger'
+#  }
+# Iterate over the cohort list, printing out each item (it's not necessary to format the dictionaries).
+cohort = []
+for idx, student in enumerate(students):
+    fav_food = foods[idx]
+    student_dic = {"student": student, "fav_food": fav_food}
+    cohort.append(student_dic)
+print(cohort)
+
+
+
+
+
+#Exercise 7
+# Using the list of students and a list comprehension, assign to a variable named awesome_students a new 
+# list containing strings similar to this:
+# ["Tina is awesome!", "Fred is awesome!", "Wilma is awesome!"]
+# Iterate over the awesome_students list, printing out each string.
